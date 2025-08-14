@@ -1,0 +1,117 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/19.1
+vfull_adder
+Z0 !s110 1745012323
+!i10b 1
+!s100 j@`0kZmJ7Y];BKBNi_z4@0
+ISbhC3S;dNj=UO^IFmN6022
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180 Labs/lab2/simulation/tb_partI
+Z3 w1745000705
+Z4 8C:/EEC 180 Labs/lab2/hdl/full_adder.v
+Z5 FC:/EEC 180 Labs/lab2/hdl/full_adder.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1745012323.000000
+Z8 !s107 C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfull_adder_test_bench
+R0
+!i10b 1
+!s100 ZLDBo9mKadakCQ]mYeo^:2
+I9H^E2^fPF_CcE=_5ef7260
+R1
+R2
+R3
+R4
+R5
+L0 11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vgeneric_full_adder
+!s110 1745012324
+!i10b 1
+!s100 <@nz]^ozNE1]aG6gCZ]0j1
+I4]IDXfI`;2TAcZ1B_[dOD0
+R1
+R2
+w1744998591
+8C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v
+FC:/EEC 180 Labs/lab2/hdl/generic_full_adder.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v|
+!i113 1
+R10
+R11
+vpartI
+R0
+!i10b 1
+!s100 5:9R<]kca7AUJg:f2mYZM3
+I@;E5F?iF:kMCCWHaz_Zei2
+R1
+R2
+w1744848754
+8C:/EEC 180 Labs/lab2/synthesis/partI/partI.v
+FC:/EEC 180 Labs/lab2/synthesis/partI/partI.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/synthesis/partI/partI.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/synthesis/partI/partI.v|
+!i113 1
+R10
+R11
+npart@i
+vtb_partI
+R0
+!i10b 1
+!s100 9EbG0Znadz2MeB7<CVgZK1
+IX_?VQYZI<K;RKom9[@g2m3
+R1
+R2
+w1744999940
+8C:/EEC 180 Labs/lab2/test/tb_partI.v
+FC:/EEC 180 Labs/lab2/test/tb_partI.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/test/tb_partI.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/test/tb_partI.v|
+!i113 1
+R10
+R11
+ntb_part@i

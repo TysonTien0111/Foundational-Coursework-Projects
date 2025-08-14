@@ -1,0 +1,59 @@
+
+**** 05/27/25 17:17:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim5"  [ C:\EEC 111 Labs\Lab #5\Lab #5-PSpiceFiles\SCHEMATIC1\sim5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\herob\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5u 0 5n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB #5
+.EXTERNAL OUTPUT Y0
+V_VVDD         NVDD 0 5Vdc
+M_M6         NVDD NVA X0 NVDD ppMOS           
+M_M5         X0 NVA 0 0 nnMOS           
+V_VA         NVA 0  
++PULSE 5V 0V 0.5u 1n 1n 499n 1u
+M_M13         NVDD X0 Y0 NVDD ppMOS           
+M_M14         Y0 X0 0 0 nnMOS           
+M_M16         N00977 Y0 0 0 nnMOS           
+M_M15         NVDD Y0 N00977 NVDD ppMOS           
+
+**** RESUMING sim5.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model ppMOS used by M_M6 is undefined
+
+ERROR(ORPSIM-15113): Model nnMOS used by M_M5 is undefined
+
+ERROR(ORPSIM-15113): Model ppMOS used by M_M13 is undefined
+
+ERROR(ORPSIM-15113): Model nnMOS used by M_M14 is undefined
+
+ERROR(ORPSIM-15113): Model nnMOS used by M_M16 is undefined
+
+ERROR(ORPSIM-15113): Model ppMOS used by M_M15 is undefined
+

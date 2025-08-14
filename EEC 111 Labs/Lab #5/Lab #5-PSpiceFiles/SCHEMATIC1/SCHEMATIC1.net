@@ -1,0 +1,7 @@
+* source LAB #5
+.EXTERNAL OUTPUT Y0
+M_M1         NVDD NVIN Y0 NVDD ppMOS           
+V_VVDD         NVDD 0 5Vdc
+M_M3         Y0 NVIN 0 0 nnMOS           
+V_VIN         NVIN 0 0Vdc
+M_M4         0 NVIN Y0 0 nnMOS           

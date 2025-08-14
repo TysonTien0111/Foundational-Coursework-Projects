@@ -1,0 +1,64 @@
+
+**** 05/22/25 10:52:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim4"  [ C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\herob\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB #4
+M_M2         NSP NGP NDP NSP ppMOS           
+M_M1         NDN NGN NSN NSN nnMOS           
+R_R2         0 NDP  6200 TC=0,0 
+R_R7         0 NGN  6200000 TC=0,0 
+R_R8         0 NSN  3000 TC=0,0 
+R_R1         NSP NVDD  3000 TC=0,0 
+R_R5         NDN NVDD  6200 TC=0,0 
+R_R3         0 NGP  7500000 TC=0,0 
+V_VDD         NVDD 0 15Vdc
+R_R6         NGN NVDD  9100000 TC=0,0 
+R_R4         NGP NVDD  7500000 TC=0,0 
+R_R9         NVIN NNVIN  55000 TC=0,0 
+C_C1         NNVIN NGN  33u  TC=0,0 
+V_VIN         NVIN 0  AC 1
++SIN 0 10m 5k 0 0 0
+C_C3         NDN NNVOUT  33u  TC=0,0 
+C_C2         0 NSN  33u  TC=0,0 
+R_R10         0 NNVOUT  25000 TC=0,0 
+C_C4         NPVIN NGP  33u  TC=0,0 
+R_R11         NVIN NPVIN  55000 TC=0,0 
+C_C5         NDP NPVOUT  33u  TC=0,0 
+C_C6         NSP NVDD  33u  TC=0,0 
+R_R12         0 NPVOUT  25000 TC=0,0 
+
+**** RESUMING sim4.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model ppMOS used by M_M2 is undefined
+
+ERROR(ORPSIM-15113): Model nnMOS used by M_M1 is undefined
+

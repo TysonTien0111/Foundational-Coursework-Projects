@@ -1,0 +1,17 @@
+module ram16x4
+(
+    input[3:0] addr,
+    input[3:0] mdi,
+    input mwr,
+    input clk,
+
+    output reg[3:0] mdo
+);
+
+    reg [3:0] memory [15:0] /* synthesis ramstyle = "M9K" */;
+    
+    always @ (posedge clk) begin
+        if (mwr) memory[addr] <= mdi; //write mem
+        mdo <= memory[addr]; // read mem
+    end
+endmodule

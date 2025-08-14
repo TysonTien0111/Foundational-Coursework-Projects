@@ -1,0 +1,1 @@
+As a member of the Aquatus project team, my primary responsibility was the design, implementation, and testing of the complete C++ control software on the Arduino platform. I developed the real-time feedback loop that read data from the TDS sensor and controlled the pump and LED indicators based on the calibrated 435 ppm threshold.

@@ -1,0 +1,11 @@
+module dec_7seg_decoder
+(
+	input[3:0]
+		bin,
+	output[7:0]
+		hex0,
+		hex1
+);
+
+
+endmodule

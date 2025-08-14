@@ -1,0 +1,5 @@
+* source LAB #1
+R_R1         NVTEST NVD  50 TC=0,0 
+D_D1         NVD 0 D1N4002 
+V_V1         NVTEST 0  
++PULSE 0.6 -5.0 0n 0.1n 0.1n 90n 200n

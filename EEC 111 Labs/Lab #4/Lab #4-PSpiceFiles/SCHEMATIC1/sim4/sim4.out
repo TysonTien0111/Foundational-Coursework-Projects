@@ -1,0 +1,167 @@
+
+**** 05/22/25 10:55:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim4"  [ C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4\sim4_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\herob\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+**** INCLUDING sim4_profile.inc ****
+.LIB    ".\cd4007.lib" 
+
+**** RESUMING sim4.cir ****
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB #4
+M_M2         NSP NGP NDP NSP ppMOS           
+M_M1         NDN NGN NSN NSN nnMOS           
+R_R2         0 NDP  6200 TC=0,0 
+R_R7         0 NGN  6200000 TC=0,0 
+R_R8         0 NSN  3000 TC=0,0 
+R_R1         NSP NVDD  3000 TC=0,0 
+R_R5         NDN NVDD  6200 TC=0,0 
+R_R3         0 NGP  7500000 TC=0,0 
+V_VDD         NVDD 0 15Vdc
+R_R6         NGN NVDD  9100000 TC=0,0 
+R_R4         NGP NVDD  7500000 TC=0,0 
+R_R9         NVIN NNVIN  55000 TC=0,0 
+C_C1         NNVIN NGN  33u  TC=0,0 
+V_VIN         NVIN 0  AC 1
++SIN 0 10m 5k 0 0 0
+C_C3         NDN NNVOUT  33u  TC=0,0 
+C_C2         0 NSN  33u  TC=0,0 
+R_R10         0 NNVOUT  25000 TC=0,0 
+C_C4         NPVIN NGP  33u  TC=0,0 
+R_R11         NVIN NPVIN  55000 TC=0,0 
+C_C5         NDP NPVOUT  33u  TC=0,0 
+C_C6         NSP NVDD  33u  TC=0,0 
+R_R12         0 NPVOUT  25000 TC=0,0 
+
+**** RESUMING sim4.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file cd4007.ind for library file cd4007.lib.
+
+INFO(ORPSIM-15422): Making new index file cd4007.ind for library file cd4007.lib.
+
+Index has 2 entries from 1 file(s).
+
+**** 05/22/25 10:55:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim4"  [ C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               ppMOS           nnMOS           
+               PMOS            NMOS            
+       LEVEL    2               2            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO   -1               1.4          
+          KP  600.000000E-06  600.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .01            5.000000E-03 
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 05/22/25 10:55:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim4"  [ C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  NDN)    8.9894  (  NDP)    8.8865  (  NGN)    6.0784  (  NGP)    7.5000      
+
+(  NSN)    2.9083  (  NSP)   10.7000  ( NVDD)   15.0000  ( NVIN)    0.0000      
+
+(NNVIN)    0.0000  (NPVIN)    0.0000  (NNVOUT)    0.0000 (NPVOUT)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -2.405E-03
+    V_VIN        0.000E+00
+
+    TOTAL POWER DISSIPATION   3.61E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/22/25 10:55:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim4"  [ C:\EEC 111 Labs\Lab #4\Lab #4-PSpiceFiles\SCHEMATIC1\sim4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .63
+

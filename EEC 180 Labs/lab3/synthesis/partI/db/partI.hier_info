@@ -1,0 +1,25 @@
+|partI
+LEDR[0] << pe42:priority_encoder42.v
+LEDR[1] << pe42:priority_encoder42.o0
+LEDR[2] << pe42:priority_encoder42.o1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+
+
+|partI|pe42:priority_encoder42
+I[0] => WideOr0.IN0
+I[1] => g2.IN0
+I[1] => WideOr0.IN1
+I[2] => comb.IN0
+I[2] => WideOr0.IN2
+I[2] => g2.IN1
+I[3] => comb.IN1
+I[3] => comb.IN1
+I[3] => WideOr0.IN3
+o1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+o0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+v <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

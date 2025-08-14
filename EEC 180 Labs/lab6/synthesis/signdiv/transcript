@@ -1,0 +1,44 @@
+# Compile of tb_signdiv.v failed with 1 errors.
+# Compile of signdiv.v was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_signdiv.v failed with 1 errors.
+# Compile of signdiv.v was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_signdiv.v was successful.
+# Compile of signdiv.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_signdiv
+# vsim -gui work.tb_signdiv 
+# Start time: 21:02:03 on Jun 05,2025
+# Loading work.tb_signdiv
+# Loading work.signdiv
+run -all
+# quotient[          1] is correct
+# remainder[          1] is correct
+# quotient[          2] is correct
+# remainder[          2] is correct
+# quotient[          3] is correct
+# remainder[          3] is correct
+# quotient[          4] is correct
+# remainder[          4] is correct
+# quotient[          5] is wrong
+# remainder[          5] is wrong
+# quotient[          6] is correct
+# remainder[          6] is correct
+# quotient[          7] is wrong
+# remainder[          7] is wrong
+# quotient[          8] is correct
+# remainder[          8] is correct
+# quotient[          9] is correct
+# remainder[          9] is correct
+# quotient[         10] is correct
+# remainder[         10] is correct
+# quotient[         11] is correct
+# remainder[         11] is correct
+# quotient[         12] is wrong
+# remainder[         12] is wrong
+# TESTS DONE
+# Break key hit
+# Simulation stop requested.
+# End time: 21:03:29 on Jun 05,2025, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0

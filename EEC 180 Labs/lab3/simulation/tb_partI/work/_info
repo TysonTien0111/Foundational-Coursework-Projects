@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/EEC 180 Labs/lab2/simulation/tb_partI
+vpartI
+Z0 !s110 1745617647
+!i10b 1
+!s100 =AzW67o>C>WoTX:PZ::YB1
+I_5>ijLGl`o2hWK_2`8_fU1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180 Labs/lab3/simulation/tb_partI
+w1745605978
+8C:/EEC 180 Labs/lab3/synthesis/partI/partI.v
+FC:/EEC 180 Labs/lab3/synthesis/partI/partI.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1745617647.000000
+!s107 C:/EEC 180 Labs/lab3/synthesis/partI/partI.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab3/synthesis/partI/partI.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+npart@i
+vpe42
+R0
+!i10b 1
+!s100 6F8Dn@G?:AG5La[kAMCX^2
+Ic3`HQFezaHfg?IY7L_5^K2
+R1
+R2
+w1744991889
+8C:/EEC 180 Labs/lab3/hdl/pe42.v
+FC:/EEC 180 Labs/lab3/hdl/pe42.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180 Labs/lab3/hdl/pe42.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab3/hdl/pe42.v|
+!i113 1
+R5
+R6
+vtb_partI
+R0
+!i10b 1
+!s100 c`9<oP24b?6JDdeRaz>[W1
+IBH1>Q>Vbc>f]6MlS=7`UE1
+R1
+R2
+w1745617641
+8C:/EEC 180 Labs/lab3/test/tb_partI.v
+FC:/EEC 180 Labs/lab3/test/tb_partI.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180 Labs/lab3/test/tb_partI.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab3/test/tb_partI.v|
+!i113 1
+R5
+R6
+ntb_part@i

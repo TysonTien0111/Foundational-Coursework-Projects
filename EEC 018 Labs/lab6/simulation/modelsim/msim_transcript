@@ -1,0 +1,60 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do lab6_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {lab6.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:59 on Dec 09,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab6.vo 
+# -- Compiling module lab6
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	lab6
+# End time: 16:04:00 on Dec 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.lab6 -L altera_ver -L fiftyfivenm_ver
+# vsim -gui -l msim_transcript work.lab6 -L altera_ver -L fiftyfivenm_ver 
+# Start time: 16:04:37 on Dec 09,2024
+# Loading work.lab6
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_clkctrl
+# Loading fiftyfivenm_ver.fiftyfivenm_mux41
+# Loading fiftyfivenm_ver.fiftyfivenm_ena_reg
+# Loading altera_ver.dffeas
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3017) lab6.vo(953): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /lab6/\~QUARTUS_CREATED_ADC1~  File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) lab6.vo(953): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) lab6.vo(976): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /lab6/\~QUARTUS_CREATED_ADC2~  File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) lab6.vo(976): [TFMPC] - Missing connection for port 'clk_dft'.
+add wave -position insertpoint  \
+sim:/lab6/KEY \
+sim:/lab6/MAX10_CLK1_50 \
+sim:/lab6/HEX1
+force -drive sim:/lab6/KEY 01 0
+force -freeze sim:/lab6/MAX10_CLK1_50 1 0, 0 {50 ps} -r 100
+run
+force -drive sim:/lab6/KEY 00 0
+run
+force -freeze sim:/lab6/KEY 10 0
+force -drive sim:/lab6/KEY 10 0
+run
+# End time: 16:06:26 on Dec 09,2024, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 4

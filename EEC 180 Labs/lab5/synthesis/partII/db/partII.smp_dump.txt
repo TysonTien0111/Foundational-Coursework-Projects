@@ -1,0 +1,6 @@
+
+State Machine - |partII|squareRoot:sqrtModule|currentState
+Name currentState.doneState currentState.subtractState currentState.initialState 
+currentState.initialState 0 0 0 
+currentState.subtractState 0 1 1 
+currentState.doneState 1 0 1 

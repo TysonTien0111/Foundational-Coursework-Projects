@@ -1,0 +1,172 @@
+|partIII
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+carry_in => carry_in.IN1
+sum[0] << generic_full_adder:k_bit_full_adder.sum
+sum[1] << generic_full_adder:k_bit_full_adder.sum
+sum[2] << generic_full_adder:k_bit_full_adder.sum
+sum[3] << generic_full_adder:k_bit_full_adder.sum
+sum[4] << generic_full_adder:k_bit_full_adder.sum
+sum[5] << generic_full_adder:k_bit_full_adder.sum
+sum[6] << generic_full_adder:k_bit_full_adder.sum
+sum[7] << generic_full_adder:k_bit_full_adder.sum
+carry_out << generic_full_adder:k_bit_full_adder.carry_out
+overflow_indicator << generic_full_adder:k_bit_full_adder.overflow_indicator
+
+
+|partIII|generic_full_adder:k_bit_full_adder
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+carry_in => carry_wire[0].IN1
+sum[0] <= full_adder:generic_full_adder[0].full_adder_i.sum
+sum[1] <= full_adder:generic_full_adder[1].full_adder_i.sum
+sum[2] <= full_adder:generic_full_adder[2].full_adder_i.sum
+sum[3] <= full_adder:generic_full_adder[3].full_adder_i.sum
+sum[4] <= full_adder:generic_full_adder[4].full_adder_i.sum
+sum[5] <= full_adder:generic_full_adder[5].full_adder_i.sum
+sum[6] <= full_adder:generic_full_adder[6].full_adder_i.sum
+sum[7] <= full_adder:generic_full_adder[7].full_adder_i.sum
+carry_out <= full_adder:generic_full_adder[7].full_adder_i.carry_out
+overflow_indicator <= overflow_indicator.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[0].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[1].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[2].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[3].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[4].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[5].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[6].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partIII|generic_full_adder:k_bit_full_adder|full_adder:generic_full_adder[7].full_adder_i
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

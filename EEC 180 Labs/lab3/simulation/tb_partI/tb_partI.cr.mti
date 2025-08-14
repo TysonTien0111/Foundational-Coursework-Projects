@@ -1,0 +1,15 @@
+{C:/EEC 180 Labs/lab3/synthesis/partI/partI.v} {1 {vlog -work work -stats=none {C:/EEC 180 Labs/lab3/synthesis/partI/partI.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module partI
+
+Top level modules:
+	partI
+
+} {} {}} {C:/EEC 180 Labs/lab3/hdl/pe42.v} {1 {vlog -work work -stats=none {C:/EEC 180 Labs/lab3/hdl/pe42.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pe42
+
+Top level modules:
+	pe42
+
+} {} {}}

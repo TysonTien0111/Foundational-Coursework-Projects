@@ -1,0 +1,21 @@
+module tb_partI;
+	reg [7:0] test_a, test_b;
+	reg test_carry_in;
+	wire [7:0] test_sum;
+	wire test_carry_out;
+	
+	full_adder FA (test_sum, test_carry_out, test_a, test_b, test_carry_in);
+	
+   initial begin
+		for (test_a = 0; test_a < 256; test_a = test_a + 1)
+		begin
+			for (test_b = 0; test_b < 256; test_b = test_b + 1)
+			begin
+			#10
+				if ({test_carry_out, test_sum} != (test_a + test_b + test_carry_in))
+					$display("ERROR: a=%b b=%b carry_in=%b sum=%b carry_out = %b", test_a, test_b, test_carry_in, sum, carry_out);
+			end
+		end
+		#10 $finish;
+	end
+endmodule

@@ -1,0 +1,12 @@
+
+State Machine - |signdiv|currentState
+Name currentState.doneState currentState.quotientAndSubtractState currentState.compareState currentState.shiftState currentState.preProcessingState currentState.loadDivisorState currentState.loadUpperDividendState currentState.loadLowerDividendState currentState.idleState 
+currentState.idleState 0 0 0 0 0 0 0 0 0 
+currentState.loadLowerDividendState 0 0 0 0 0 0 0 1 1 
+currentState.loadUpperDividendState 0 0 0 0 0 0 1 0 1 
+currentState.loadDivisorState 0 0 0 0 0 1 0 0 1 
+currentState.preProcessingState 0 0 0 0 1 0 0 0 1 
+currentState.shiftState 0 0 0 1 0 0 0 0 1 
+currentState.compareState 0 0 1 0 0 0 0 0 1 
+currentState.quotientAndSubtractState 0 1 0 0 0 0 0 0 1 
+currentState.doneState 1 0 0 0 0 0 0 0 1 

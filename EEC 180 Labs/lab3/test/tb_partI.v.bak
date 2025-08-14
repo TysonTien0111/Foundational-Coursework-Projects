@@ -1,0 +1,49 @@
+module tb_partI;
+    reg[1:0] correct_output;
+    reg correct_valid;
+
+    reg [3:0] test_input; 
+    wire [2:0] test_output;
+
+    partI UUT
+    (
+        .SW(test_input),
+        .LEDR(test_output),
+    );
+
+    initial
+    begin
+        correct_output = 2'b00;
+        correct_valid = 1'b0;
+
+        for (test_input = 0; test_input < 16; ++test_input)
+        begin
+            #10
+            if (test_input != 0)
+            {
+                ++correct_valid;
+            }
+            
+            if (test_input == 1)
+            {
+                ++correct_output;
+            } else if (test_input >= 2 && test_input < 4)
+            {
+                ++correct_output;
+            } else if (test_input >= 4 && test_input < 8)
+            {
+                ++correct_output;
+            } else
+            {
+                ++correct_output;
+            }
+
+            if ((test_v != test_input) || ({test_o1, test_o0} != correct_output))
+            {
+                $display("ERROR: test_input=%b test_o1=%b test_o0=%b test_v=%b", test_input, test_o1, test_o0, test_v);
+            }
+        end
+        #10 $finish;
+    end
+
+endmodule

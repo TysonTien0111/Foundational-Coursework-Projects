@@ -1,0 +1,116 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/EEC 180 Labs/lab3/simulation/tb_partI
+vfull_adder
+Z0 !s110 1745031828
+!i10b 1
+!s100 j@`0kZmJ7Y];BKBNi_z4@0
+ISbhC3S;dNj=UO^IFmN6022
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180 Labs/lab2/simulation/tb_partII
+Z3 w1745000705
+Z4 8C:/EEC 180 Labs/lab2/hdl/full_adder.v
+Z5 FC:/EEC 180 Labs/lab2/hdl/full_adder.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1745031828.000000
+Z8 !s107 C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfull_adder_test_bench
+R0
+!i10b 1
+!s100 ZLDBo9mKadakCQ]mYeo^:2
+I9H^E2^fPF_CcE=_5ef7260
+R1
+R2
+R3
+R4
+R5
+L0 11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vhex_7seg_decoder
+R0
+!i10b 1
+!s100 GN<1VG[?n2JgI`LajXecc0
+InF`lhVoU_D@^6z0VaTkWb2
+R1
+R2
+w1745030263
+8C:/EEC 180 Labs/lab2/hdl/hex_7seg_decoder.v
+FC:/EEC 180 Labs/lab2/hdl/hex_7seg_decoder.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/hdl/hex_7seg_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/hex_7seg_decoder.v|
+!i113 1
+R10
+R11
+vmultiplier_4x4
+R0
+!i10b 1
+!s100 _RHGW3aen>k9>]L4T51eT2
+I6i>efOR118B6dS58nZ8`03
+R1
+R2
+w1745031509
+8C:/EEC 180 Labs/lab2/hdl/multiplier_4x4.v
+FC:/EEC 180 Labs/lab2/hdl/multiplier_4x4.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/hdl/multiplier_4x4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/multiplier_4x4.v|
+!i113 1
+R10
+R11
+vpartII
+R0
+!i10b 1
+!s100 1_97HdB6lPoEUN7DQ>i1C2
+IP0lL8[=RU=co2JjH7gnG?2
+R1
+R2
+w1745031733
+8C:/EEC 180 Labs/lab2/synthesis/partII/partII.v
+FC:/EEC 180 Labs/lab2/synthesis/partII/partII.v
+L0 6
+R6
+r1
+!s85 0
+31
+!s108 1745031827.000000
+!s107 C:/EEC 180 Labs/lab2/synthesis/partII/partII.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/synthesis/partII/partII.v|
+!i113 1
+R10
+R11
+npart@i@i

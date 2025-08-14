@@ -1,0 +1,10 @@
+Wed Apr 16 16:59:11 PDT 2025
+Trace back: bad window path name ".main_pane.dataflow.interior.cs.body.pw.wf.top.grid.row0,wave.data"
+    while executing
+"bind $W <Map> ""           "
+    (procedure "Wave::SyncEmbedded" line 23)
+    invoked from within
+"Wave::SyncEmbedded .main_pane.dataflow.interior.cs.body.pw.wf.top.grid.row0,wave.data .main_pane.dataflow.interior.cs.body.pw.wf.top .main_pane.wave.i..."
+    (command bound to event)
+  <2:C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ".main_pane.dataflow.interior.cs.body.pw.wf.top.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ".main_pane.dataflow.interior.cs.body.pw.wf.top.grid.row0,wave.data"}

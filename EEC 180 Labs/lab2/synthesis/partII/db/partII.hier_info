@@ -1,0 +1,516 @@
+|partII
+HEX0[0] << hex_7seg_decoder:first.segs
+HEX0[1] << hex_7seg_decoder:first.segs
+HEX0[2] << hex_7seg_decoder:first.segs
+HEX0[3] << hex_7seg_decoder:first.segs
+HEX0[4] << hex_7seg_decoder:first.segs
+HEX0[5] << hex_7seg_decoder:first.segs
+HEX0[6] << hex_7seg_decoder:first.segs
+HEX0[7] << hex_7seg_decoder:first.segs
+HEX1[0] << hex_7seg_decoder:second.segs
+HEX1[1] << hex_7seg_decoder:second.segs
+HEX1[2] << hex_7seg_decoder:second.segs
+HEX1[3] << hex_7seg_decoder:second.segs
+HEX1[4] << hex_7seg_decoder:second.segs
+HEX1[5] << hex_7seg_decoder:second.segs
+HEX1[6] << hex_7seg_decoder:second.segs
+HEX1[7] << hex_7seg_decoder:second.segs
+HEX2[0] << hex_7seg_decoder:B.segs
+HEX2[1] << hex_7seg_decoder:B.segs
+HEX2[2] << hex_7seg_decoder:B.segs
+HEX2[3] << hex_7seg_decoder:B.segs
+HEX2[4] << hex_7seg_decoder:B.segs
+HEX2[5] << hex_7seg_decoder:B.segs
+HEX2[6] << hex_7seg_decoder:B.segs
+HEX2[7] << hex_7seg_decoder:B.segs
+HEX3[0] << hex_7seg_decoder:A.segs
+HEX3[1] << hex_7seg_decoder:A.segs
+HEX3[2] << hex_7seg_decoder:A.segs
+HEX3[3] << hex_7seg_decoder:A.segs
+HEX3[4] << hex_7seg_decoder:A.segs
+HEX3[5] << hex_7seg_decoder:A.segs
+HEX3[6] << hex_7seg_decoder:A.segs
+HEX3[7] << hex_7seg_decoder:A.segs
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX4[7] << <VCC>
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << <VCC>
+HEX5[7] << <VCC>
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+
+
+|partII|multiplier_4x4:comb_3
+a[0] => comb.IN0
+a[0] => comb.IN0
+a[0] => comb.IN0
+a[0] => comb.IN0
+a[1] => comb.IN0
+a[1] => comb.IN0
+a[1] => comb.IN0
+a[1] => comb.IN0
+a[2] => comb.IN0
+a[2] => comb.IN0
+a[2] => comb.IN0
+a[2] => comb.IN0
+a[3] => comb.IN0
+a[3] => comb.IN0
+a[3] => comb.IN0
+a[3] => comb.IN0
+b[0] => comb.IN1
+b[0] => comb.IN1
+b[0] => comb.IN1
+b[0] => comb.IN1
+b[1] => comb.IN1
+b[1] => comb.IN1
+b[1] => comb.IN1
+b[1] => comb.IN1
+b[2] => comb.IN1
+b[2] => comb.IN1
+b[2] => comb.IN1
+b[2] => comb.IN1
+b[3] => comb.IN1
+b[3] => comb.IN1
+b[3] => comb.IN1
+b[3] => comb.IN1
+p[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= full_adder:comb_11.port3
+p[2] <= full_adder:comb_19.port3
+p[3] <= full_adder:comb_27.port3
+p[4] <= full_adder:comb_28.port3
+p[5] <= full_adder:comb_29.port3
+p[6] <= full_adder:comb_30.port3
+p[7] <= full_adder:comb_30.port4
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_11
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_12
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_13
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_14
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_19
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_20
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_21
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_22
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_27
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_28
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_29
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|multiplier_4x4:comb_3|full_adder:comb_30
+a => sum.IN0
+a => carry_out.IN0
+a => carry_out.IN0
+b => sum.IN1
+b => carry_out.IN1
+b => carry_out.IN0
+carry_in => sum.IN1
+carry_in => carry_out.IN1
+carry_in => carry_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|partII|hex_7seg_decoder:A
+bin[0] => SYNTHESIZED_WIRE_2.IN1
+bin[0] => SYNTHESIZED_WIRE_9.IN1
+bin[0] => SYNTHESIZED_WIRE_8.IN1
+bin[0] => SYNTHESIZED_WIRE_0.IN1
+bin[0] => SYNTHESIZED_WIRE_12.IN0
+bin[0] => SYNTHESIZED_WIRE_10.IN1
+bin[0] => SYNTHESIZED_WIRE_14.IN1
+bin[0] => SYNTHESIZED_WIRE_15.IN1
+bin[0] => SYNTHESIZED_WIRE_17.IN1
+bin[0] => SYNTHESIZED_WIRE_20.IN1
+bin[0] => SYNTHESIZED_WIRE_21.IN1
+bin[0] => SYNTHESIZED_WIRE_1.IN1
+bin[0] => SYNTHESIZED_WIRE_4.IN1
+bin[0] => SYNTHESIZED_WIRE_5.IN1
+bin[0] => SYNTHESIZED_WIRE_7.IN1
+bin[0] => SYNTHESIZED_WIRE_13.IN1
+bin[0] => SYNTHESIZED_WIRE_3.IN1
+bin[0] => SYNTHESIZED_WIRE_19.IN1
+bin[1] => SYNTHESIZED_WIRE_6.IN1
+bin[1] => SYNTHESIZED_WIRE_5.IN1
+bin[1] => SYNTHESIZED_WIRE_9.IN0
+bin[1] => SYNTHESIZED_WIRE_0.IN0
+bin[1] => SYNTHESIZED_WIRE_13.IN0
+bin[1] => SYNTHESIZED_WIRE_14.IN0
+bin[1] => SYNTHESIZED_WIRE_17.IN1
+bin[1] => SYNTHESIZED_WIRE_20.IN1
+bin[1] => SYNTHESIZED_WIRE_10.IN0
+bin[1] => SYNTHESIZED_WIRE_11.IN1
+bin[1] => SYNTHESIZED_WIRE_16.IN1
+bin[1] => SYNTHESIZED_WIRE_18.IN1
+bin[1] => SYNTHESIZED_WIRE_19.IN0
+bin[1] => SYNTHESIZED_WIRE_22.IN1
+bin[2] => SYNTHESIZED_WIRE_9.IN1
+bin[2] => SYNTHESIZED_WIRE_16.IN0
+bin[2] => SYNTHESIZED_WIRE_17.IN0
+bin[2] => SYNTHESIZED_WIRE_19.IN1
+bin[2] => SYNTHESIZED_WIRE_10.IN1
+bin[2] => SYNTHESIZED_WIRE_13.IN1
+bin[2] => SYNTHESIZED_WIRE_18.IN0
+bin[2] => SYNTHESIZED_WIRE_20.IN0
+bin[3] => SYNTHESIZED_WIRE_0.IN1
+bin[3] => SYNTHESIZED_WIRE_16.IN1
+bin[3] => SYNTHESIZED_WIRE_20.IN1
+bin[3] => SYNTHESIZED_WIRE_12.IN1
+bin[3] => SYNTHESIZED_WIRE_14.IN1
+bin[3] => SYNTHESIZED_WIRE_18.IN1
+bin[3] => SYNTHESIZED_WIRE_17.IN1
+segs[0] <= X0.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= X1.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= X2.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= X3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= X4.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= X5.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= X6.DB_MAX_OUTPUT_PORT_TYPE
+segs[7] <= <VCC>
+
+
+|partII|hex_7seg_decoder:B
+bin[0] => SYNTHESIZED_WIRE_2.IN1
+bin[0] => SYNTHESIZED_WIRE_9.IN1
+bin[0] => SYNTHESIZED_WIRE_8.IN1
+bin[0] => SYNTHESIZED_WIRE_0.IN1
+bin[0] => SYNTHESIZED_WIRE_12.IN0
+bin[0] => SYNTHESIZED_WIRE_10.IN1
+bin[0] => SYNTHESIZED_WIRE_14.IN1
+bin[0] => SYNTHESIZED_WIRE_15.IN1
+bin[0] => SYNTHESIZED_WIRE_17.IN1
+bin[0] => SYNTHESIZED_WIRE_20.IN1
+bin[0] => SYNTHESIZED_WIRE_21.IN1
+bin[0] => SYNTHESIZED_WIRE_1.IN1
+bin[0] => SYNTHESIZED_WIRE_4.IN1
+bin[0] => SYNTHESIZED_WIRE_5.IN1
+bin[0] => SYNTHESIZED_WIRE_7.IN1
+bin[0] => SYNTHESIZED_WIRE_13.IN1
+bin[0] => SYNTHESIZED_WIRE_3.IN1
+bin[0] => SYNTHESIZED_WIRE_19.IN1
+bin[1] => SYNTHESIZED_WIRE_6.IN1
+bin[1] => SYNTHESIZED_WIRE_5.IN1
+bin[1] => SYNTHESIZED_WIRE_9.IN0
+bin[1] => SYNTHESIZED_WIRE_0.IN0
+bin[1] => SYNTHESIZED_WIRE_13.IN0
+bin[1] => SYNTHESIZED_WIRE_14.IN0
+bin[1] => SYNTHESIZED_WIRE_17.IN1
+bin[1] => SYNTHESIZED_WIRE_20.IN1
+bin[1] => SYNTHESIZED_WIRE_10.IN0
+bin[1] => SYNTHESIZED_WIRE_11.IN1
+bin[1] => SYNTHESIZED_WIRE_16.IN1
+bin[1] => SYNTHESIZED_WIRE_18.IN1
+bin[1] => SYNTHESIZED_WIRE_19.IN0
+bin[1] => SYNTHESIZED_WIRE_22.IN1
+bin[2] => SYNTHESIZED_WIRE_9.IN1
+bin[2] => SYNTHESIZED_WIRE_16.IN0
+bin[2] => SYNTHESIZED_WIRE_17.IN0
+bin[2] => SYNTHESIZED_WIRE_19.IN1
+bin[2] => SYNTHESIZED_WIRE_10.IN1
+bin[2] => SYNTHESIZED_WIRE_13.IN1
+bin[2] => SYNTHESIZED_WIRE_18.IN0
+bin[2] => SYNTHESIZED_WIRE_20.IN0
+bin[3] => SYNTHESIZED_WIRE_0.IN1
+bin[3] => SYNTHESIZED_WIRE_16.IN1
+bin[3] => SYNTHESIZED_WIRE_20.IN1
+bin[3] => SYNTHESIZED_WIRE_12.IN1
+bin[3] => SYNTHESIZED_WIRE_14.IN1
+bin[3] => SYNTHESIZED_WIRE_18.IN1
+bin[3] => SYNTHESIZED_WIRE_17.IN1
+segs[0] <= X0.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= X1.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= X2.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= X3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= X4.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= X5.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= X6.DB_MAX_OUTPUT_PORT_TYPE
+segs[7] <= <VCC>
+
+
+|partII|hex_7seg_decoder:first
+bin[0] => SYNTHESIZED_WIRE_2.IN1
+bin[0] => SYNTHESIZED_WIRE_9.IN1
+bin[0] => SYNTHESIZED_WIRE_8.IN1
+bin[0] => SYNTHESIZED_WIRE_0.IN1
+bin[0] => SYNTHESIZED_WIRE_12.IN0
+bin[0] => SYNTHESIZED_WIRE_10.IN1
+bin[0] => SYNTHESIZED_WIRE_14.IN1
+bin[0] => SYNTHESIZED_WIRE_15.IN1
+bin[0] => SYNTHESIZED_WIRE_17.IN1
+bin[0] => SYNTHESIZED_WIRE_20.IN1
+bin[0] => SYNTHESIZED_WIRE_21.IN1
+bin[0] => SYNTHESIZED_WIRE_1.IN1
+bin[0] => SYNTHESIZED_WIRE_4.IN1
+bin[0] => SYNTHESIZED_WIRE_5.IN1
+bin[0] => SYNTHESIZED_WIRE_7.IN1
+bin[0] => SYNTHESIZED_WIRE_13.IN1
+bin[0] => SYNTHESIZED_WIRE_3.IN1
+bin[0] => SYNTHESIZED_WIRE_19.IN1
+bin[1] => SYNTHESIZED_WIRE_6.IN1
+bin[1] => SYNTHESIZED_WIRE_5.IN1
+bin[1] => SYNTHESIZED_WIRE_9.IN0
+bin[1] => SYNTHESIZED_WIRE_0.IN0
+bin[1] => SYNTHESIZED_WIRE_13.IN0
+bin[1] => SYNTHESIZED_WIRE_14.IN0
+bin[1] => SYNTHESIZED_WIRE_17.IN1
+bin[1] => SYNTHESIZED_WIRE_20.IN1
+bin[1] => SYNTHESIZED_WIRE_10.IN0
+bin[1] => SYNTHESIZED_WIRE_11.IN1
+bin[1] => SYNTHESIZED_WIRE_16.IN1
+bin[1] => SYNTHESIZED_WIRE_18.IN1
+bin[1] => SYNTHESIZED_WIRE_19.IN0
+bin[1] => SYNTHESIZED_WIRE_22.IN1
+bin[2] => SYNTHESIZED_WIRE_9.IN1
+bin[2] => SYNTHESIZED_WIRE_16.IN0
+bin[2] => SYNTHESIZED_WIRE_17.IN0
+bin[2] => SYNTHESIZED_WIRE_19.IN1
+bin[2] => SYNTHESIZED_WIRE_10.IN1
+bin[2] => SYNTHESIZED_WIRE_13.IN1
+bin[2] => SYNTHESIZED_WIRE_18.IN0
+bin[2] => SYNTHESIZED_WIRE_20.IN0
+bin[3] => SYNTHESIZED_WIRE_0.IN1
+bin[3] => SYNTHESIZED_WIRE_16.IN1
+bin[3] => SYNTHESIZED_WIRE_20.IN1
+bin[3] => SYNTHESIZED_WIRE_12.IN1
+bin[3] => SYNTHESIZED_WIRE_14.IN1
+bin[3] => SYNTHESIZED_WIRE_18.IN1
+bin[3] => SYNTHESIZED_WIRE_17.IN1
+segs[0] <= X0.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= X1.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= X2.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= X3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= X4.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= X5.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= X6.DB_MAX_OUTPUT_PORT_TYPE
+segs[7] <= <VCC>
+
+
+|partII|hex_7seg_decoder:second
+bin[0] => SYNTHESIZED_WIRE_2.IN1
+bin[0] => SYNTHESIZED_WIRE_9.IN1
+bin[0] => SYNTHESIZED_WIRE_8.IN1
+bin[0] => SYNTHESIZED_WIRE_0.IN1
+bin[0] => SYNTHESIZED_WIRE_12.IN0
+bin[0] => SYNTHESIZED_WIRE_10.IN1
+bin[0] => SYNTHESIZED_WIRE_14.IN1
+bin[0] => SYNTHESIZED_WIRE_15.IN1
+bin[0] => SYNTHESIZED_WIRE_17.IN1
+bin[0] => SYNTHESIZED_WIRE_20.IN1
+bin[0] => SYNTHESIZED_WIRE_21.IN1
+bin[0] => SYNTHESIZED_WIRE_1.IN1
+bin[0] => SYNTHESIZED_WIRE_4.IN1
+bin[0] => SYNTHESIZED_WIRE_5.IN1
+bin[0] => SYNTHESIZED_WIRE_7.IN1
+bin[0] => SYNTHESIZED_WIRE_13.IN1
+bin[0] => SYNTHESIZED_WIRE_3.IN1
+bin[0] => SYNTHESIZED_WIRE_19.IN1
+bin[1] => SYNTHESIZED_WIRE_6.IN1
+bin[1] => SYNTHESIZED_WIRE_5.IN1
+bin[1] => SYNTHESIZED_WIRE_9.IN0
+bin[1] => SYNTHESIZED_WIRE_0.IN0
+bin[1] => SYNTHESIZED_WIRE_13.IN0
+bin[1] => SYNTHESIZED_WIRE_14.IN0
+bin[1] => SYNTHESIZED_WIRE_17.IN1
+bin[1] => SYNTHESIZED_WIRE_20.IN1
+bin[1] => SYNTHESIZED_WIRE_10.IN0
+bin[1] => SYNTHESIZED_WIRE_11.IN1
+bin[1] => SYNTHESIZED_WIRE_16.IN1
+bin[1] => SYNTHESIZED_WIRE_18.IN1
+bin[1] => SYNTHESIZED_WIRE_19.IN0
+bin[1] => SYNTHESIZED_WIRE_22.IN1
+bin[2] => SYNTHESIZED_WIRE_9.IN1
+bin[2] => SYNTHESIZED_WIRE_16.IN0
+bin[2] => SYNTHESIZED_WIRE_17.IN0
+bin[2] => SYNTHESIZED_WIRE_19.IN1
+bin[2] => SYNTHESIZED_WIRE_10.IN1
+bin[2] => SYNTHESIZED_WIRE_13.IN1
+bin[2] => SYNTHESIZED_WIRE_18.IN0
+bin[2] => SYNTHESIZED_WIRE_20.IN0
+bin[3] => SYNTHESIZED_WIRE_0.IN1
+bin[3] => SYNTHESIZED_WIRE_16.IN1
+bin[3] => SYNTHESIZED_WIRE_20.IN1
+bin[3] => SYNTHESIZED_WIRE_12.IN1
+bin[3] => SYNTHESIZED_WIRE_14.IN1
+bin[3] => SYNTHESIZED_WIRE_18.IN1
+bin[3] => SYNTHESIZED_WIRE_17.IN1
+segs[0] <= X0.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= X1.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= X2.DB_MAX_OUTPUT_PORT_TYPE
+segs[3] <= X3.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= X4.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= X5.DB_MAX_OUTPUT_PORT_TYPE
+segs[6] <= X6.DB_MAX_OUTPUT_PORT_TYPE
+segs[7] <= <VCC>
+
+

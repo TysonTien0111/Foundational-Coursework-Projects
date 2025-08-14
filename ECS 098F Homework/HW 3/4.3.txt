@@ -1,0 +1,1 @@
+cat 500.txt | grep ^9 | cut -d " " -f2 | xargs cp -t horizons/

@@ -1,0 +1,15 @@
+module hexDisplay
+(
+    input a, b, c, d,
+    output[7:0] x
+);
+
+    assign x[0] = (b & ~c & ~d) | (a & b & ~c) | (a & ~b & c & d) | (~a & ~b & ~c & d);
+    assign x[1] = (a & c & d) | (~a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & ~d);
+    assign x[2] = (a & b & c) | (~a & ~b & c & ~d) | (a & b & ~d); 
+    assign x[3] = (b & c & d) | (~a & b & ~c & ~d) | (~a & ~b & ~c & d);
+    assign x[4] = (~a & d) | (~a & b & ~c) | (~b & ~c & d);
+    assign x[5] = (~a & c & d) | (~b & c & ~d) | (a & b & ~c) | (~a & ~b & d);
+    assign x[6] = (~a & ~b & ~c) | (~a & b & c & d);
+    assign x[7] = 1;
+endmodule

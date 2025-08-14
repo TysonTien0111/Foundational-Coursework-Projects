@@ -1,0 +1,19 @@
+module mux2to1
+(
+    input memWrite0,
+    input memWrite1,
+    input select,
+    
+    output reg writeOut
+);
+
+    always@(memWrite0 or memWrite1 or select)
+    begin
+        case(select)
+            1'b0:
+                writeOut = memWrite0;
+            1'b1:
+                writeOut = memWrite1;
+        endcase
+    end
+endmodule

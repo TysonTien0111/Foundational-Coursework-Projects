@@ -1,0 +1,36 @@
+* source LAB #6
+M_M5         N00239 NY3 NY4 N00239 TSMC180nmP  
++ L=180n  
++ W=1350n         
+M_M6         NY4 NY3 0 0 TSMC180nmN  
++ L=180n  
++ W=450n         
+V_V_DD4         N00239 0 1.8Vdc
+M_M7         N00937 NY4 NY0 N00937 TSMC180nmP  
++ L=180n  
++ W=1350n         
+M_M8         NY0 NY4 0 0 TSMC180nmN  
++ L=180n  
++ W=450n         
+V_V_DD0         N00937 0 1.8Vdc
+V_V_DD1         N01399 0 1.8Vdc
+M_M9         N01399 NY0 NY1 N01399 TSMC180nmP  
++ L=180n  
++ W=1350n         
+M_M10         NY1 NY0 0 0 TSMC180nmN  
++ L=180n  
++ W=450n         
+V_V_DD2         N01869 0 1.8Vdc
+M_M12         NY2 NY1 0 0 TSMC180nmN  
++ L=180n  
++ W=450n         
+M_M11         N01869 NY1 NY2 N01869 TSMC180nmP  
++ L=180n  
++ W=1350n         
+V_V_DD3         N02347 0 1.8Vdc
+M_M13         N02347 NY2 NY3 N02347 TSMC180nmP  
++ L=180n  
++ W=1350n         
+M_M14         NY3 NY2 0 0 TSMC180nmN  
++ L=180n  
++ W=450n         

@@ -1,0 +1,2 @@
+The input that caused this bug was "1234567891234567 / 6758934". The output was expected to be 182657189,
+but instead the buggy answer didn't match the expected output.

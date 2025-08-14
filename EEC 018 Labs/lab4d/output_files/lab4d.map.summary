@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Nov 08 11:38:26 2024
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : lab4d
+Top-level Entity Name : lab4d
+Family : MAX 10
+Total logic elements : 44
+    Total combinational functions : 34
+    Dedicated logic registers : 10
+Total registers : 10
+Total pins : 70
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

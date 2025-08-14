@@ -1,0 +1,117 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/EEC 180 Labs/lab3/simulation/tb_partI
+vfull_adder
+Z0 !s110 1745019852
+!i10b 1
+!s100 j@`0kZmJ7Y];BKBNi_z4@0
+ISbhC3S;dNj=UO^IFmN6022
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180 Labs/lab2/simulation/tb_partIII
+Z3 w1745000705
+Z4 8C:/EEC 180 Labs/lab2/hdl/full_adder.v
+Z5 FC:/EEC 180 Labs/lab2/hdl/full_adder.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1745019852.000000
+Z8 !s107 C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/full_adder.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfull_adder_test_bench
+R0
+!i10b 1
+!s100 ZLDBo9mKadakCQ]mYeo^:2
+I9H^E2^fPF_CcE=_5ef7260
+R1
+R2
+R3
+R4
+R5
+L0 11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vgeneric_full_adder
+R0
+!i10b 1
+!s100 <@nz]^ozNE1]aG6gCZ]0j1
+I4]IDXfI`;2TAcZ1B_[dOD0
+R1
+R2
+w1744998591
+8C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v
+FC:/EEC 180 Labs/lab2/hdl/generic_full_adder.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/hdl/generic_full_adder.v|
+!i113 1
+R10
+R11
+vpartIII
+R0
+!i10b 1
+!s100 YK9UWok=94ELWMEEhl]da1
+I5eMYOF?oKO8m3goWQK?g52
+R1
+R2
+w1744998594
+8C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v
+FC:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v|
+!i113 1
+R10
+R11
+npart@i@i@i
+vtb_partIII
+R0
+!i10b 1
+!s100 HFSTj2Ak=FzYPon<@VKF^0
+IMPeMDFXd`S>Wg@;hS?nJ=3
+R1
+R2
+w1744999863
+8C:/EEC 180 Labs/lab2/test/tb_partIII.v
+FC:/EEC 180 Labs/lab2/test/tb_partIII.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/EEC 180 Labs/lab2/test/tb_partIII.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180 Labs/lab2/test/tb_partIII.v|
+!i113 1
+R10
+R11
+ntb_part@i@i@i

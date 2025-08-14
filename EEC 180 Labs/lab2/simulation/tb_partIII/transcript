@@ -1,0 +1,32 @@
+# Compile of full_adder.v was successful.
+# Compile of generic_full_adder.v was successful.
+# Compile of tb_partIII.v was successful.
+# Compile of partIII.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_partIII
+# vsim -gui work.tb_partIII 
+# Start time: 16:44:23 on Apr 18,2025
+# Loading work.tb_partIII
+# Loading work.partIII
+# Loading work.generic_full_adder
+# Loading work.full_adder
+# ** Warning: (vsim-3015) C:/EEC 180 Labs/lab2/test/tb_partIII.v(10): [PCDPC] - Port size (8) does not match connection size (32) for port 'a'. The port definition is at: C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_partIII/UUT File: C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v
+# ** Warning: (vsim-3015) C:/EEC 180 Labs/lab2/test/tb_partIII.v(10): [PCDPC] - Port size (8) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_partIII/UUT File: C:/EEC 180 Labs/lab2/synthesis/partIII/partIII.v
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_partIII/K \
+sim:/tb_partIII/test_a \
+sim:/tb_partIII/test_b \
+sim:/tb_partIII/test_carry_in \
+sim:/tb_partIII/test_sum \
+sim:/tb_partIII/test_carry_out \
+sim:/tb_partIII/test_overflow
+run -all
+# ** Note: $finish    : C:/EEC 180 Labs/lab2/test/tb_partIII.v(32)
+#    Time: 655370 ps  Iteration: 0  Instance: /tb_partIII
+# 1
+# Break in Module tb_partIII at C:/EEC 180 Labs/lab2/test/tb_partIII.v line 32
+# End time: 16:49:12 on Apr 18,2025, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 3

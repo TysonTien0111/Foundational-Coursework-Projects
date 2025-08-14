@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/herob/Documents/eec18/lab5a/simulation/modelsim
+vhard_block
+Z1 !s110 1732145104
+!i10b 1
+!s100 PPTJEf7]XX`=nj9jLijCO2
+If0Ab@CziLh2^[F>I>ZR_f2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1732145055
+Z4 8lab5a.vo
+Z5 Flab5a.vo
+L0 599
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1732145104.000000
+Z8 !s107 lab5a.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab5a.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vlab5a
+R1
+!i10b 1
+!s100 jmg7QPdUi>fXbRiR@ml>J0
+ILkIk=Q^EHT1RU51Um?z@c1
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

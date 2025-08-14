@@ -1,0 +1,1 @@
+cat 500.txt | cut -d " " -f1 | sort -n | uniq -c

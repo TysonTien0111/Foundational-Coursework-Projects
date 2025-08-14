@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tyson/Documents/eec18/lab2_pos/simulation/modelsim
+vhard_block
+Z1 !s110 1729118995
+!i10b 1
+!s100 G7kkUfziO27?aoG:oM0mO1
+I<=7^9BS1iBC@MDX?I:D562
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1729118980
+Z4 8lab2_pos.vo
+Z5 Flab2_pos.vo
+L0 433
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1729118994.000000
+Z8 !s107 lab2_pos.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab2_pos.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vlab2_pos
+R1
+!i10b 1
+!s100 iA<b`<5DnZ6OJR<Tfa=_33
+IkDaTg<gR?U41>PPY[U_1<0
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

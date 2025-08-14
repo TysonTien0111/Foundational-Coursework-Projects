@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/herob/Documents/eec18/lab3/simulation/modelsim
+vhard_block
+Z1 !s110 1729807572
+!i10b 1
+!s100 e`5Y5Cz`olFGcLj^D=e^80
+I0CRON;7ThTMDO;`eah[`H2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1729806145
+Z4 8lab3.vo
+Z5 Flab3.vo
+L0 640
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1729807572.000000
+Z8 !s107 lab3.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab3.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vlab3
+R1
+!i10b 1
+!s100 FYV0?baS@DE_8k?`WI8ID1
+IjcnV<]JE0:<X^_eGX0lg22
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

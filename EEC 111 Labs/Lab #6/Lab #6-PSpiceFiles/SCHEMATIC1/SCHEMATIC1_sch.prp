@@ -1,0 +1,574 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("TSMC180nmP")
+        ("TSMC180nmN")
+        ("VDC")
+    )
+    ("instances"
+        ("M5"
+            ("device_name"	"TSMC180nmP")
+            ("pspice_path"	"M_M5")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"1350n")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("M6"
+            ("device_name"	"TSMC180nmN")
+            ("pspice_path"	"M_M6")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"450n")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("V_DD4"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V_DD4")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.8Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M7"
+            ("device_name"	"TSMC180nmP")
+            ("pspice_path"	"M_M7")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1350n")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("M8"
+            ("device_name"	"TSMC180nmN")
+            ("pspice_path"	"M_M8")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"450n")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("V_DD0"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V_DD0")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.8Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V_DD1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V_DD1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.8Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M9"
+            ("device_name"	"TSMC180nmP")
+            ("pspice_path"	"M_M9")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1350n")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("M10"
+            ("device_name"	"TSMC180nmN")
+            ("pspice_path"	"M_M10")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"450n")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("V_DD2"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V_DD2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.8Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M12"
+            ("device_name"	"TSMC180nmN")
+            ("pspice_path"	"M_M12")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"450n")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("M11"
+            ("device_name"	"TSMC180nmP")
+            ("pspice_path"	"M_M11")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1350n")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("V_DD3"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V_DD3")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.8Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M13"
+            ("device_name"	"TSMC180nmP")
+            ("pspice_path"	"M_M13")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1350n")
+                    ("pspice_param"	"W")
+                )
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+        ("M14"
+            ("device_name"	"TSMC180nmN")
+            ("pspice_path"	"M_M14")
+            ("level"	"0")
+            ("model_params"
+                ("L"
+                    ("value"	"180n")
+                    ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"450n")
+                    ("pspice_param"	"W")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+            )
+        )
+    )
+)

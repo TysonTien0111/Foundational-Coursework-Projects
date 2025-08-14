@@ -1,0 +1,1 @@
+cat image_labels.txt | head -n 500 > 500.txt

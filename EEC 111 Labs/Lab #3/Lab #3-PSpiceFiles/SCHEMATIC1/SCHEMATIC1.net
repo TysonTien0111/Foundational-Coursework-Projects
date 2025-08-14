@@ -1,0 +1,12 @@
+* source LAB #3
+M_M1         NDN NGN NSN NSN nnMOS           
+M_M2         NSP NGP NDP NSP ppMOS           
+R_R1         NSP NVDD  240 TC=0,0 
+R_R2         0 NDP  1000 TC=0,0 
+R_R3         0 NGP  39000 TC=0,0 
+R_R4         NGP NVDD  62000 TC=0,0 
+R_R5         NDN NVDD  1000 TC=0,0 
+R_R6         NGN NVDD  30000 TC=0,0 
+R_R7         0 NGN  68000 TC=0,0 
+R_R8         0 NSN  240 TC=0,0 
+V_VDD         NVDD 0 5Vdc

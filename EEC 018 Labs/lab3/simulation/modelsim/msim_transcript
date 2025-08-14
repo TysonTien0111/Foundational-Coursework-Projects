@@ -1,0 +1,78 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do lab3_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {lab3.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:06:12 on Oct 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab3.vo 
+# -- Compiling module lab3
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	lab3
+# End time: 15:06:12 on Oct 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.lab3 -L altera_ver -L fiftyfivenm_ver
+# vsim -gui -l msim_transcript work.lab3 -L altera_ver -L fiftyfivenm_ver 
+# Start time: 15:07:24 on Oct 24,2024
+# Loading work.lab3
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# ** Warning: (vsim-3017) lab3.vo(561): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /lab3/\~QUARTUS_CREATED_ADC1~  File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) lab3.vo(561): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) lab3.vo(584): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /lab3/\~QUARTUS_CREATED_ADC2~  File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) lab3.vo(584): [TFMPC] - Missing connection for port 'clk_dft'.
+add wave -position insertpoint  \
+sim:/lab3/HEX0 \
+sim:/lab3/SW \
+sim:/lab3/HEX1
+force -drive sim:/lab3/SW 0000 0
+run
+force -drive sim:/lab3/SW 0001 0
+run
+force -drive sim:/lab3/SW 0010 0
+run
+force -drive sim:/lab3/SW 0011 0
+run
+force -drive sim:/lab3/SW 0100 0
+run
+force -drive sim:/lab3/SW 0101 0
+run
+force -drive sim:/lab3/SW 0110 0
+run
+force -drive sim:/lab3/SW 0111 0
+run
+force -drive sim:/lab3/SW 1000 0
+run
+force -drive sim:/lab3/SW 1001 0
+run
+force -drive sim:/lab3/SW 1010 0
+run
+force -drive sim:/lab3/SW 1011 0
+run
+force -drive sim:/lab3/SW 1100 0
+run
+force -drive sim:/lab3/SW 1101 0
+run
+force -drive sim:/lab3/SW 1110 0
+run
+force -drive sim:/lab3/SW 1111 0
+run
+# End time: 15:11:34 on Oct 24,2024, Elapsed time: 0:04:10
+# Errors: 0, Warnings: 4

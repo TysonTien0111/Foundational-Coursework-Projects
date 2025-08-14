@@ -1,0 +1,148 @@
+|lab3
+HEX0[0] <= sevenSegmentDecoder:inst13902091.X0
+HEX0[1] <= sevenSegmentDecoder:inst13902091.X1
+HEX0[2] <= sevenSegmentDecoder:inst13902091.X2
+HEX0[3] <= sevenSegmentDecoder:inst13902091.X3
+HEX0[4] <= sevenSegmentDecoder:inst13902091.X4
+HEX0[5] <= sevenSegmentDecoder:inst13902091.X5
+HEX0[6] <= sevenSegmentDecoder:inst13902091.X6
+HEX0[7] <= sevenSegmentDecoder:inst13902091.X7
+SW[0] => circuitA:inst12120.V0
+SW[0] => mux:inst10003.V
+SW[1] => comparator:inst598.Input0
+SW[1] => circuitA:inst12120.V1
+SW[1] => inst10006.IN0
+SW[1] => mux:inst10002.V
+SW[2] => comparator:inst598.Input2
+SW[2] => circuitA:inst12120.V2
+SW[2] => mux:inst10001.V
+SW[3] => comparator:inst598.Input3
+SW[3] => comparator:inst598.Input1
+SW[3] => mux:inst10000.V
+HEX1[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <VCC>
+HEX1[7] <= <VCC>
+
+
+|lab3|sevenSegmentDecoder:inst13902091
+X0 <= isdnst31.DB_MAX_OUTPUT_PORT_TYPE
+M3 => inst50.IN0
+M3 => inst9310390290.IN0
+M3 => inst9099090.IN0
+M3 => inst12931239021390.IN0
+M3 => inst2999230.IN0
+M3 => inst12939023.IN0
+M3 => inst39012391231290312.IN0
+M3 => 3213.IN0
+M3 => inst90319032902900.IN0
+M3 => inst3199032909.IN0
+M3 => inst323290902390.IN0
+M3 => inst9090390219.IN0
+M2 => inst3190.IN1
+M2 => inst51.IN0
+M2 => inst9099090.IN1
+M2 => inst31293083.IN1
+M2 => inst2999230.IN1
+M2 => inst39012391231290312.IN1
+M2 => inst910391390210921.IN1
+M2 => inst90319032902900.IN1
+M2 => inst9023902390123901.IN0
+M2 => inst39090.IN1
+M2 => inst323290902390.IN1
+M2 => inst219390329090.IN1
+M2 => inst219021902903290.IN1
+M1 => inst52.IN0
+M1 => inst9310390290.IN2
+M1 => inst9099090.IN2
+M1 => inst12931239021390.IN1
+M1 => inst31293083.IN2
+M1 => inst12939023.IN2
+M1 => inst39019090290.IN2
+M1 => ist13123213.IN1
+M1 => iosnt12371203273.IN2
+M1 => 3213.IN2
+M1 => inst910391390210921.IN2
+M1 => inst90319032902900.IN2
+M1 => inst93190100.IN1
+M1 => inst323290902390.IN2
+M1 => inst219021902903290.IN2
+M0 => inst53.IN0
+M0 => inst9310390290.IN3
+M0 => inst1290309902.IN3
+M0 => inst12931239021390.IN2
+M0 => inst9932139021321903.IN2
+M0 => inst12939023.IN3
+M0 => inst9129029032903.IN3
+M0 => ist13123213.IN2
+M0 => inst910391390210921.IN3
+M0 => inst9023902390123901.IN1
+M0 => inst3199032909.IN2
+M0 => inst93190100.IN2
+M0 => inst31290382190382093.IN2
+M0 => inst219021902903290.IN3
+M0 => inst9090390219.IN2
+X1 <= inst31232.DB_MAX_OUTPUT_PORT_TYPE
+X2 <= inst930190303.DB_MAX_OUTPUT_PORT_TYPE
+X5 <= inst13321321.DB_MAX_OUTPUT_PORT_TYPE
+X6 <= inst1312111.DB_MAX_OUTPUT_PORT_TYPE
+X7 <= <VCC>
+X4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+X3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3|mux:inst10000
+M <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => isnt2312.IN0
+Z => inst2.IN1
+V => inst3.IN1
+A => inst2.IN0
+
+
+|lab3|comparator:inst598
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => inst2.IN0
+Input0 => inst2.IN1
+Input3 => inst.IN0
+Input2 => inst.IN1
+
+
+|lab3|circuitA:inst12120
+M3 <= <GND>
+M2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+V2 => inst2.IN0
+V1 => inst2.IN1
+M1 <= V1N.DB_MAX_OUTPUT_PORT_TYPE
+V1N => M1.DATAIN
+M0 <= V0.DB_MAX_OUTPUT_PORT_TYPE
+V0 => M0.DATAIN
+
+
+|lab3|mux:inst10001
+M <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => isnt2312.IN0
+Z => inst2.IN1
+V => inst3.IN1
+A => inst2.IN0
+
+
+|lab3|mux:inst10002
+M <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => isnt2312.IN0
+Z => inst2.IN1
+V => inst3.IN1
+A => inst2.IN0
+
+
+|lab3|mux:inst10003
+M <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => isnt2312.IN0
+Z => inst2.IN1
+V => inst3.IN1
+A => inst2.IN0
+
+
